@@ -14,7 +14,7 @@ protocol AuthenticationControllerDelegate: class {
 }
 
 class AuthenticationController: UIViewController {
-    fileprivate let loginSuccessUrl = URL(string: "https://dwlocal.ngrok.io/")!
+    fileprivate let loginSuccessUrl = URL(string: "https://droptune.co/")!
     
     var url: URL?
     var webViewConfiguration: WKWebViewConfiguration?
@@ -43,8 +43,12 @@ class AuthenticationController: UIViewController {
 
 extension AuthenticationController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-
-        if let url = navigationAction.request.url, url == loginSuccessUrl {
+        
+        guard let url = navigationAction.request.url else { return }
+        
+        NSLog("Auth URL is: %@", url.absoluteString)
+        
+        if url == loginSuccessUrl {
             decisionHandler(.cancel)
             delegate?.authenticationControllerDidAuthenticate(self)
             return

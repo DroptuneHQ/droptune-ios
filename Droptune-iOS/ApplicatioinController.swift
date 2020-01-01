@@ -12,7 +12,7 @@ import Turbolinks
 import SafariServices
 
 class ApplicationController: UINavigationController {
-    fileprivate let url = URL(string: "https://dwlocal.ngrok.io")!
+    fileprivate let url = URL(string: "https://droptune.co")!
     fileprivate let authPaths = [
         "/users/auth/twitter", "/users/auth/spotify"
     ]
@@ -37,6 +37,7 @@ class ApplicationController: UINavigationController {
     fileprivate lazy var session: Session = {
         let session = Session(webViewConfiguration: self.webViewConfiguration)
         session.delegate = self
+        session.webView.uiDelegate = self
         return session
     }()
 
@@ -75,6 +76,7 @@ class ApplicationController: UINavigationController {
 }
 
 extension ApplicationController: SessionDelegate {
+  
     func session(_ session: Session, didProposeVisitToURL URL: Foundation.URL, withAction action: Action) {
         NSLog("Attempted visit to %@", URL.absoluteString)
         
@@ -149,5 +151,18 @@ extension ApplicationController: WKScriptMessageHandler {
         guard let message = ScriptMessage.parse(message) else { return }
         
         handleScriptMessage(message: message)
+    }
+}
+
+extension ApplicationController: WKUIDelegate {
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        guard let url = navigationAction.request.url else { return nil }
+        
+        if navigationAction.targetFrame == nil {
+            NSLog("Attempting to launch URL in new target, assuming auth controller %@", url.absoluteString)
+            presentAuthenticationController(url: url)
+        }
+
+        return nil
     }
 }
