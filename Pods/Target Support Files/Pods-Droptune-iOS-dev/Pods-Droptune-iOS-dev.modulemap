@@ -1,0 +1,6 @@
+framework module Pods_Droptune_iOS_dev {
+  umbrella header "Pods-Droptune-iOS-dev-umbrella.h"
+
+  export *
+  module * { export * }
+}
