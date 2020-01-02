@@ -38,7 +38,6 @@
 		8272373C23B7E056006DFC69 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
 		8272373E23B7E0E7006DFC69 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		8272374023B960A0006DFC69 /* ScriptMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptMessage.swift; sourceTree = "<group>"; };
-		82BC97EC23BE8B0D006206E3 /* Droptune-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Droptune-iOS copy-Info.plist"; path = "/Users/dwestendorf/Repos/Droptune-iOS/Droptune-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		82BC97ED23BE8BA3006206E3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		82BC97EF23BE8F1C006206E3 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BD3C4CDD2985789FB3CDB323 /* Pods_Droptune_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droptune_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +64,6 @@
 				82390CAD23B7D88C003CC6EB /* Products */,
 				9A3AC7A1E73C12CE09AE6510 /* Pods */,
 				D1530028CD0D06DBA51F1B0F /* Frameworks */,
-				82BC97EC23BE8B0D006206E3 /* Droptune-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
