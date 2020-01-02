@@ -8,3 +8,11 @@ target 'Droptune-iOS' do
   # Pods for Droptune-iOS
   pod 'Turbolinks', :git => 'https://github.com/turbolinks/turbolinks-ios.git'
 end
+
+target 'Droptune-iOS-dev' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Droptune-iOS
+  pod 'Turbolinks', :git => 'https://github.com/turbolinks/turbolinks-ios.git'
+end
