@@ -12,9 +12,9 @@ import Turbolinks
 import SafariServices
 
 class ApplicationController: UINavigationController {
-    fileprivate let url = URL(string: "https://droptune.co")!
+    fileprivate let url = Server.baseURL
     fileprivate let authPaths = [
-        "/users/auth/twitter", "/users/auth/spotify"
+        Server.twitterAuthPath, Server.spotifyAuthPath
     ]
     fileprivate let webViewProcessPool = WKProcessPool()
 

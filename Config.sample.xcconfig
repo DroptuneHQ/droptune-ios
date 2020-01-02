@@ -1,0 +1,14 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// URL which the app should load at start
+APP_HOST = droptune.co
+
+// URL which indicates a 3rd party login was successful
+LOGIN_SUCCESS_URL = droptune.co
+
+// Path that initiates twitter auth
+TWITTER_AUTH_PATH = /users/auth/twitter
+
+// Path that initiates spotify auth
+SPOTIFY_AUTH_PATH = /users/auth/spotify

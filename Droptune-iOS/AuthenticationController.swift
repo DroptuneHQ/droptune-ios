@@ -14,7 +14,7 @@ protocol AuthenticationControllerDelegate: class {
 }
 
 class AuthenticationController: UIViewController {
-    fileprivate let loginSuccessUrl = URL(string: "https://droptune.co/")!
+    fileprivate let loginSuccessUrl = Server.loginSuccessURL
     
     var url: URL?
     var webViewConfiguration: WKWebViewConfiguration?

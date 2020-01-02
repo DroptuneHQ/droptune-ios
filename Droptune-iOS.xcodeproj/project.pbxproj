@@ -19,6 +19,8 @@
 		8272373D23B7E056006DFC69 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272373C23B7E056006DFC69 /* AuthenticationController.swift */; };
 		8272373F23B7E0E7006DFC69 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8272373E23B7E0E7006DFC69 /* ErrorView.xib */; };
 		8272374123B960A0006DFC69 /* ScriptMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272374023B960A0006DFC69 /* ScriptMessage.swift */; };
+		82BC97EE23BE8BA3006206E3 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 82BC97ED23BE8BA3006206E3 /* Config.xcconfig */; };
+		82BC97F023BE8F1C006206E3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BC97EF23BE8F1C006206E3 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		8272373C23B7E056006DFC69 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
 		8272373E23B7E0E7006DFC69 /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		8272374023B960A0006DFC69 /* ScriptMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptMessage.swift; sourceTree = "<group>"; };
+		82BC97EC23BE8B0D006206E3 /* Droptune-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Droptune-iOS copy-Info.plist"; path = "/Users/dwestendorf/Repos/Droptune-iOS/Droptune-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		82BC97ED23BE8BA3006206E3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		82BC97EF23BE8F1C006206E3 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		BD3C4CDD2985789FB3CDB323 /* Pods_Droptune_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droptune_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75CA36B2ED786DF2DBFE498 /* Pods-Droptune-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droptune-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Droptune-iOS/Pods-Droptune-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,10 +60,12 @@
 		82390CA323B7D88C003CC6EB = {
 			isa = PBXGroup;
 			children = (
+				82BC97ED23BE8BA3006206E3 /* Config.xcconfig */,
 				82390CAE23B7D88C003CC6EB /* Droptune-iOS */,
 				82390CAD23B7D88C003CC6EB /* Products */,
 				9A3AC7A1E73C12CE09AE6510 /* Pods */,
 				D1530028CD0D06DBA51F1B0F /* Frameworks */,
+				82BC97EC23BE8B0D006206E3 /* Droptune-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +92,7 @@
 				8272373C23B7E056006DFC69 /* AuthenticationController.swift */,
 				8272373E23B7E0E7006DFC69 /* ErrorView.xib */,
 				8272374023B960A0006DFC69 /* ScriptMessage.swift */,
+				82BC97EF23BE8F1C006206E3 /* Configuration.swift */,
 			);
 			path = "Droptune-iOS";
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8272373523B7DC9C006DFC69 /* Main.storyboard in Resources */,
+				82BC97EE23BE8BA3006206E3 /* Config.xcconfig in Resources */,
 				82390CBC23B7D88D003CC6EB /* LaunchScreen.storyboard in Resources */,
 				82390CB923B7D88D003CC6EB /* Assets.xcassets in Resources */,
 				8272373F23B7E0E7006DFC69 /* ErrorView.xib in Resources */,
@@ -228,6 +237,7 @@
 				8272373D23B7E056006DFC69 /* AuthenticationController.swift in Sources */,
 				8272374123B960A0006DFC69 /* ScriptMessage.swift in Sources */,
 				8272373923B7DFE6006DFC69 /* Error.swift in Sources */,
+				82BC97F023BE8F1C006206E3 /* Configuration.swift in Sources */,
 				8272373723B7DFD0006DFC69 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +258,7 @@
 /* Begin XCBuildConfiguration section */
 		82390CBE23B7D88D003CC6EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BC97ED23BE8BA3006206E3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -308,6 +319,7 @@
 		};
 		82390CBF23B7D88D003CC6EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BC97ED23BE8BA3006206E3 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
