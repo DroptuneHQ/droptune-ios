@@ -1,0 +1,22 @@
+//
+//  Config.xcconfig
+//  Droptune-iOS
+//
+//  Created by Daniel Westendorf on 1/2/20.
+//  Copyright © 2020 Daniel Westendorf. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// URL which the app should load at start
+APP_HOST = dwlocal.ngrok.io
+
+// URL which indicates a 3rd party login was successful
+LOGIN_SUCCESS_URL = dwlocal.ngrok.io
+
+// Path that initiates twitter auth
+TWITTER_AUTH_PATH = /users/auth/twitter
+
+// Path that initiates spotify auth
+SPOTIFY_AUTH_PATH = /users/auth/spotify
